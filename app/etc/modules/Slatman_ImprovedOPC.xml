@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Slatman_ImprovedOPC>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends></depends>
+        </Slatman_ImprovedOPC>
+    </modules>
+</config>

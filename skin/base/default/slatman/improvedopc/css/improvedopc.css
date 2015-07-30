@@ -1,0 +1,94 @@
+/*
+	Inspired by https://www.h-o.nl/blog/improved_magento_one_page_checkout_design_css_only 
+	and https://gist.github.com/ppassmannpriv/fa2c590927abc8d84504
+*/
+
+.checkout-onepage-index .col-main { width: 100%; padding:0; }
+.block-progress .block-title { background:none; margin:0 0 34px; padding:0; }
+.checkout-onepage-index .col-main { padding:0; border:0; }
+.checkout-onepage-index .page-title { padding-right:40px; width:auto; }
+.checkout-onepage-index .page-title h1 { background:none; padding:0; }
+
+.opc { position:relative; overflow:hidden; height:970px; }
+.opc .buttons-set { margin:15px 0 0; opacity:1!important; }
+.opc .buttons-set p.required { margin:0; padding:0 0 10px; }
+.opc .buttons-set .back-link { display:none; }
+.opc .buttons-set .please-wait { position:absolute; z-index:99; top:30%; left:50%; margin:-80px 0 0 -146px; border:5px solid #f3b66f; font-size:12px; background:#fff; padding:30px; white-space:nowrap; border:1px solid #c0c0c0; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px; -moz-box-shadow:1px 1px 2px rgba(0,0,0,0.2); -webkit-box-shadow:0 0 50px rgba(0,0,0,0.2); box-shadow:0 0 50px rgba(0,0,0,0.2); }
+.opc .buttons-set a { color:#214D90; }
+.opc .ul { list-style:disc outside; padding-left:18px; }
+.opc li.section { display:inline; }
+.opc .section .step-title { width: 16.6%; }
+.opc .step-title,.opc .allow .step-title { height: 120px }
+.opc .step { padding:30px 20px; position:absolute; border:0; top:110px; left:0; z-index:1; height:900px; border:none; text-align:left; }
+body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section:not(#opc-login) .step-title, body:not(.opc-has-progressed-from-login) .opc-block-progress-step-login { opacity: 1; }
+.opc .step-title .number,.opc .allow .step-title .number,.opc .active .step-title .number { float:none; display:block; margin:0 auto; margin-bottom:10px; }
+.opc .step-title { position:relative; float:left; text-align:center; padding:15px 11px 0; margin-left:-1px; background:none; margin: 20px 0 0 0; }
+.opc .step-title a { display:none; }
+.opc .step-title .number { background:#ccc; color:#fff; width:30px; height:30px; line-height:30px; -moz-border-radius:20px; -webkit-border-radius:20px; border-radius:20px; margin-bottom:10px; padding:0; border:0; }
+.opc .step-title h2 { font-size:12px; color:#bbb; clear:both; }
+.opc .allow .step-title { cursor:pointer; background:none; }
+.opc .allow .step-title .number { background:#000; color:#fff; }
+.opc .allow .step-title h2 { color:#000; }
+.opc .active .step-title { cursor:default; z-index:2; }
+.opc .section .step-title, .opc .active .step-title, .opc .section.active .step-title { border:none; padding:0; }
+.opc .active .step-title .number { background:#F18200; border-color:#fff; color:#fff; }
+.opc .active .step-title h2 { color:#F18200; }
+.opc .section .step-title h2, .opc .step-title h2,.opc .allow .step-title h2,.opc .active .step-title h2 { width:100%; text-align:center; font-family: 'Open Sans', sans-serif; font-size: 14px; margin:0;  position: absolute; top: 55px; left:0px; }
+.opc .step-title { width:16%; }
+body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-login .step-title h2 { color: #00529b; }
+.opc:first-of-type .step{-webkit-transition: all 0.5s ease-in-out;-moz-transition: all 0.5s ease-in-out;-o-transition: all 0.5s ease-in-out;-webkit-transition: all 0.5s ease-in-out;transition: all 0.5s ease-in-out;}
+.opc:first-of-type .step[style*='display:none;'],
+.opc:first-of-type .step[style*='display: none;']{display:block !important;}
+.opc:first-of-type .section .step{left: 100%;}
+.opc:first-of-type .allow .step{left: -100%;}
+.opc:first-of-type .active .step{left:0;}
+.opc:first-of-type li:last-child .step-title a{width:50%}
+.opc:first-of-type li:first-child .step-title a{width:50%;left:50%}
+
+#opc-review .step { padding:30px 20px; border-top:1px solid #BBAFA0; }
+#opc-review .product-name { font-weight:bold; color:#0a263c; }
+#opc-review .item-options { margin:5px 0 0; }
+#opc-review .buttons-set { padding:20px 0; border:0; }
+#opc-review .buttons-set p { margin:0; line-height:40px; }
+#opc-review .buttons-set .please-wait { height:40px; line-height:40px; }
+#opc-shipping_method .buttons-set { border-top:1px solid #E4E4E4; }
+
+.opc .section .step-title .number,
+.opc .section.allow.active .step-title .number,
+.no-touch .opc .section.allow:hover .step-title .number,
+body:not(.opc-has-progressed-from-login) .opc.opc-firststep-login .section#opc-login .step-title .number { width: 40px; height: 40px; -moz-border-radius: 25px; border-radius: 25px; font-size: 18px; line-height: 38px; font-weight: 600; position: absolute; top:5px; left: 50%; margin:0; margin-left: -20px; background: #bbb; }
+body.checkout-onepage-index .page .main-container #checkoutSteps.opc .section.allow .step-title .number { background: #c1d95f; }
+.no-touch .opc .section.allow:not(.active) .step-title:hover { background: none; }
+.opc .section.allow:not(.active) .step-title a { margin:0; padding:0; font-size:0; line-height:0; width: 100%; height: 100%; }
+
+/*--------------------------------------------
+	SOME FIXES BELOW
+--------------------------------------------*/
+body.checkout-onepage-index .page .main-container #checkoutSteps.opc .section.active .step-title .number { background: #3399CC; }
+
+.no-touch .opc .section.allow:not(.active) .step-title:hover .number { 
+	background: #3399CC !important;
+}
+
+#checkout-progress-wrapper {
+	display:none;
+}
+
+input#billing\:fax {display:none;}
+label[for=billing\:fax] {display: none;}
+input#billing\:company {display:none;}
+label[for=billing\:company] {display: none;}
+
+.opc {
+	/* height:1000px; */
+}
+
+*[id^='checkout-step-']{
+    margin-top:20px;
+}
+
+@-moz-document url-prefix() {
+	#checkoutSteps {
+		padding-top:30px;
+	}
+}
