@@ -4,7 +4,7 @@ Improved One Page Checkout CSS
 
 Facts
 -----
-- version: 1.0.0
+- version: 1.0.1
 - extension key: Slatman_ImprovedOPC
 - [extension on GitHub](https://github.com/hslatman/magento-improved-opc-css)
 
@@ -36,9 +36,13 @@ If you have any issues with this extension, open an issue on [GitHub](https://gi
 Developer
 ---------
 Herman Slatman
+
 [https://hermanslatman.nl](https://hermanslatman.nl)
+
 [http://slatman-it.nl](http://slatman-it.nl)
-[@FirstNameLastName](https://twitter.com/hslatman)
+
+[@hslatman](https://twitter.com/hslatman)
+
 
 Licence
 -------
